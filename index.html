@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>js Assignment</title>
+		<link href="css/main.css" rel="stylesheet">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		
+		
+		<section id="main-content">
+			<div class="container">
+				
+				<form method="post" id="submitform" class="subform" name="submitform" onsubmit="event.preventDefault();">
+					<fieldset>
+						<legend>Form Assignment</legend>
+
+						<div class="formgroup name">
+							<label>Full Name</label>
+							<input type="text" name="name" id="fullname" ifempty="name is missing">
+						</div>
+						<div class="formgroup email">
+							<label>Email</label>
+							<input type="email" name="email" id="email" ifempty="email is missing">
+						</div>
+						<div class="formgroup msg">
+							<label>Message</label>
+							<textarea name="message" id="message" ifempty="msg is missing"></textarea>
+						</div>
+						
+						<div class="formgroup">	
+							<input type="submit" value="Register" name="s1" id="submit-button" class="submit"onclick="validateform()">
+						</div>
+
+						
+					</fieldset>
+				</form>
+			</div>
+		</section>
+		
+
+
+
+		<script src="js/main.js"></script>
+		
+	</body>
+</html>
